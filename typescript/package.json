@@ -1,0 +1,57 @@
+{
+  "name": "@aumos/vitest-governance",
+  "version": "0.1.0",
+  "description": "Vitest plugin for AumOS governance testing",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@aumos/governance": ">=0.1.0",
+    "vitest": ">=1.5.0"
+  },
+  "peerDependenciesMeta": {
+    "@aumos/governance": {
+      "optional": false
+    },
+    "vitest": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "@aumos/governance": ">=0.1.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.5.0"
+  },
+  "keywords": [
+    "vitest",
+    "plugin",
+    "governance",
+    "aumos",
+    "trust",
+    "testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muveraai/aumos-oss.git",
+    "directory": "trust-test/typescript"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
