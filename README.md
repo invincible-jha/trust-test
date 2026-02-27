@@ -1,5 +1,7 @@
 # trust-test
 
+[![Governance Score](https://img.shields.io/badge/governance-self--assessed-blue)](https://github.com/aumos-ai/trust-test)
+
 Testing framework with governance-specific assertions for AumOS.
 
 Provides two independent plugins — one for Python/pytest and one for TypeScript/Vitest —
