@@ -48,8 +48,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/muveraai/aumos-oss.git",
-    "directory": "trust-test/typescript"
+    "url": "https://github.com/aumos-ai/trust-test.git",
+    "directory": "typescript"
   },
   "publishConfig": {
     "access": "public"

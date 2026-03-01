@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "pytest-aumos-governance"
+name = "aumos-trust-test"
 version = "0.1.0"
 description = "pytest plugin for AumOS governance testing"
 readme = "README.md"
@@ -38,9 +38,9 @@ dev = [
 governance = "pytest_governance.plugin"
 
 [project.urls]
-Homepage = "https://github.com/muveraai/aumos-oss/tree/main/trust-test"
-Repository = "https://github.com/muveraai/aumos-oss"
-"Bug Tracker" = "https://github.com/muveraai/aumos-oss/issues"
+Homepage = "https://github.com/aumos-ai/trust-test"
+Repository = "https://github.com/aumos-ai/trust-test"
+"Bug Tracker" = "https://github.com/aumos-ai/trust-test/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/pytest_governance"]

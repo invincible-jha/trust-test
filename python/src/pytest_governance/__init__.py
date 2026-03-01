@@ -14,6 +14,13 @@ Public API
 - Matchers:   see pytest_governance.matchers
 """
 
+from pytest_governance.benchmarks import (
+    BenchmarkReport,
+    BenchmarkResult,
+    BenchmarkScenario,
+    BenchmarkSuite,
+    run_benchmarks,
+)
 from pytest_governance.assertions import (
     assert_audit_contains,
     assert_budget_exceeded,
@@ -23,9 +30,30 @@ from pytest_governance.assertions import (
     assert_governance_permitted,
     assert_trust_required,
 )
+from pytest_governance.junit_output import JUnitTestCase, TrustTestJUnitReporter
 from pytest_governance.matchers import GovernanceDecisionMatcher, expect_decision
+from pytest_governance.trust_assertions import (
+    assert_audit_contains,
+    assert_budget_remaining,
+    assert_consent_granted,
+    assert_trust_level,
+)
 
 __all__ = [
+    # benchmarks
+    "BenchmarkSuite",
+    "BenchmarkScenario",
+    "BenchmarkResult",
+    "BenchmarkReport",
+    "run_benchmarks",
+    # junit output
+    "TrustTestJUnitReporter",
+    "JUnitTestCase",
+    # trust assertions (standalone)
+    "assert_trust_level",
+    "assert_budget_remaining",
+    "assert_consent_granted",
+    "assert_audit_contains",
     # assertions
     "assert_trust_required",
     "assert_budget_sufficient",
